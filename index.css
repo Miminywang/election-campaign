@@ -393,3 +393,92 @@ body {
 	top: 1143px;
 	left: 885px;
 }
+
+/* policy */
+.policy {
+	height: 1154px;
+	position: relative;
+	top: 150px;
+	left: 250px;
+}
+
+.policy span {
+	height: 50px;
+	width: 137px;
+	color: #EA7F1B;
+	line-height: 50px;
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.policy h2 {
+	height: 220px;
+	width: 572px;
+	color: #45280D;
+	line-height: 100px;
+	font-size: 80px;
+	font-weight: 800;
+	letter-spacing: 2px;
+}
+
+.policy-basecolor {
+	position: absolute;
+	top: 200px;
+	left: 94px;
+	z-index: -1;
+}
+
+.policy-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	display: flex;
+	gap: 60px;
+}
+
+.policy-content img {
+	position: absolute;
+	top: 285px;
+}
+
+.policy-content .policy-text {
+	position: absolute;
+	top: 285px;
+	left: 720px;
+}
+
+.policy-text {
+	width: 551px;
+}
+
+.policy-text h3{
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 50px;
+	letter-spacing: 2px;
+	color: #505050;
+}
+
+.text-container {
+	margin-left: 23px;
+	margin-top: 18px;
+}
+
+.text-container ol {
+	list-style-type: decimal;
+}		
+
+.policy-text li {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 2px;
+}
+
+.policy-fishes {
+	position: absolute;
+	top: 688px;
+	left: 1021px;
+}
+
+/* donation */
