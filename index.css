@@ -49,10 +49,118 @@ table {
 }
 
 /* start */
-body{
-  height: auto;
-  width: 1920px;
-  
+body {
+	width: 1920px;
+}
+
+.relative {
+	position: relative;
 }
 
 /* navbar */
+.navbar {
+	height: 127px;
+	width: 1920px;
+	position: absolute;
+	z-index: 100;
+	background: #fff;
+}
+
+.navbar-container {
+	display: flex;
+	align-items: center;
+	padding: 52px 250px;
+}
+
+.navbar-list-left,
+.navbar-list-right,
+.links-images {
+	display: flex;
+}
+
+.navbar-list-left{
+	margin-right: 200px;
+	width: 700px;
+}
+
+.navbar-list-left li {
+	width: 500px;
+}
+
+.navbar-list-right{
+	width: 400px;
+}
+
+.navbar-list-right li {
+	width: 200px;
+}
+
+.links-images a{
+	margin: 0 12px;
+}
+
+.navbar-list-left a,
+.navbar-list-right a {
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.list-item {
+	cursor: pointer;
+}
+
+.navbar-logo-absolute {
+	position: absolute;
+	top: 20px;
+	right: 877px;
+	left: 877px;
+}
+
+/* banner */
+.banner-absolute {
+	position: absolute;
+	top: 127px;
+	right: 0;
+	left: 0;
+	border-top: 2px solid #EA7F1B;
+}
+
+.banner-img{
+	max-width: 100%;
+	z-index: 2;
+	position: absolute;
+}
+
+.base-color {
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+}
+
+.label {
+	font-size: 100px;
+	font-weight: 800;
+	color: #45280D;
+	line-height: 150px;
+	letter-spacing: 15px;
+	position: absolute;
+	z-index: 10;
+	height: 300px;
+	width: 755px;
+	margin: 139px 915px 258px 250px;
+}
+
+.fish-decoration {
+	position: absolute;
+	top: 546px;
+	left: 186px;
+	right: 1471px;
+	z-index: 10;
+}
+
+/* about me */
