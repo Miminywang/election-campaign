@@ -482,3 +482,301 @@ body {
 }
 
 /* donation */
+.donation {
+	height: 1200px;
+}
+
+.donation-content{
+	text-align: center;
+	margin-bottom: 48px;
+	background: #fff;
+}
+
+.donation-content span {
+	width: 99px;
+	height: 50px;
+	font-weight: 400px;
+	font-size: 30px;
+	color: #EA7F1B;
+}
+
+.donation-content h2 {
+	width: 388px;
+	height: 100px;
+	font-weight: 800;
+	font-size: 80px;
+	line-height: 100px;
+	letter-spacing: 2px;
+	color: #45280D;
+	margin: 10px auto 28px auto;
+}
+
+.donation-content .donor{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+}
+
+.donor .total {
+	font-weight: 400;
+	font-size: 30px;
+	letter-spacing: 2px;
+	line-height: 50px;
+	color: #858585;
+	margin-right: 5px;
+}
+
+.donor .total-number {
+	font-weight: 800;
+	font-size: 50px;
+	line-height: 60px;
+	letter-spacing: 2px;
+	color: #EA7F1B;
+}
+
+.donation-banner {
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.donation-background {
+	width: 1920px;
+	height: 734px;
+	background: linear-gradient(
+		to right, 
+		rgba(255, 255, 255, 0.7),
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0.4)), 
+		url(images/donation/cat-banner.png);	
+}
+
+.arrow {
+	border-radius: 50%;
+	border: none;
+}
+
+.left-arrow {
+	position: absolute;
+	top: 327px;
+	left: 60px;
+}
+
+.right-arrow {
+	position: absolute;
+	top: 327px;
+	right: 60px;
+}
+
+.donation-info {
+	background: rgba(255, 255, 255, 0.7);
+	width: 452px;
+	height: 322px;
+	position: absolute;
+	top: 367px;
+	left: 1218px;
+	border-radius: 8px;
+}
+
+.donation-info label {
+	width: 302px;
+	height: 60px;
+	font-weight: 800;
+	font-size: 50px;
+	color: #505050;
+	letter-spacing: 1px;
+	position: absolute;
+	top: 30px;
+	left: 75px;
+	right: 75px;
+}
+
+.donation-info .detail {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+
+.detail .title {
+	width: 108px;
+	height: 30px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 2px;
+	color: #050505;
+	margin-right: 10px;
+}
+
+.detail .amount {
+	width: 139px;
+	height: 50px;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 50px;
+	letter-spacing: 2px;
+	color: #EA7F1B;
+}
+
+.donor-number {
+	width: 164px;
+	height: 20px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	color: #858585;
+	position: absolute;
+	top: 156px;
+	left: 50px;
+}
+
+.donation-info button {
+	width: 325px;
+	height: 60px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 2px;
+	color: white;
+	background: #EA7F1B;
+	border: none;
+	position: absolute;
+	top: 212px;
+	left: 50px;
+}
+
+/* feedback */
+.feedback {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 1283px;
+}
+
+.feedback-info {
+	width: 592px;
+	position: absolute;
+	top: 215px;
+	left: 250px;
+}
+
+.feedback-info span {
+	width: 134px;
+	height: 50px;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 50px;
+	color: #EA7F1B;
+	letter-spacing: 1px;
+}
+
+.feedback-info h2 {
+	width: 592px;
+	height: 100px;
+	font-weight: 800;
+	font-size: 80px;
+	line-height: 100px;
+	color: #45280D;
+	letter-spacing: 2px;
+	margin: 10px 0 60px 0;
+}
+
+.feedback-info h3 {
+	width: 578px;
+	height: 50px;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 50px;
+	color: #505050;
+	letter-spacing: 2px;
+	margin-bottom: 18px;
+}
+
+.feedback-info p {
+	width: 551px;
+	height: 90px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	color: #505050;
+	letter-spacing: 2px;
+}
+
+.feedback-form {
+	width: 698px;
+	height: 819px;
+	border-radius: 8px;
+	background: rgba(234, 127, 27, 0.1);
+	position: absolute;
+	left: 972px;
+
+	border: transparent;
+  box-shadow: 10px 14px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form form {
+	padding: 80px 60px;
+}
+
+.feedback-form label {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 30px;
+	letter-spacing: 2px;
+	margin-bottom: 4px;
+	color: #858585;
+}
+
+.feedback-form input, textarea {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+	padding: 20px 20px;
+	letter-spacing: 2px;
+}
+
+.feedback-form input {
+	height: 50px;
+	margin-bottom: 24px;
+}
+
+.feedback-form textarea {
+	height: 200px;
+	margin-bottom: 40px;
+
+}
+
+.feedback-form input[type=submit] {
+	width: 100%;
+	height: 60px;
+	border-radius: 8px;
+	background: #EA7F1B;
+	cursor: pointer;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	color: white;
+	letter-spacing: 4px;
+}
+
+.feedback-form input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.feedback-form img {
+	position: absolute;
+	top: 779px;
+	left: 402px;
+}
