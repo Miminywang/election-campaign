@@ -49,15 +49,20 @@ table {
 }
 
 /* start */
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	width: 1920px;
 	height: auto;
-	border: 1px solid	#EA7F1B;
+	border: 0.5px solid	#EA7F1B;
+
 }
 
 .relative {
 	position: relative;
-	height: 1056px;
+	height: 778px;
 }
 
 /* navbar */
@@ -168,12 +173,19 @@ body {
 
 /* about me */
 .about-me {
-	margin-left: 250px;
+	/* margin-left: 250px; */
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 10px;
 	padding: 10px;
 	height: 995px;
+	position: relative;
+}
+
+.about-me-container {
+	position: absolute;
+	top: 250px;
+	left: 250px;
 }
 
 .intro-left {
@@ -197,7 +209,9 @@ body {
 	line-height: 100px;
 	font-size: 80px;
 	font-weight: 800;
-	letter-spacing: 2px;
+	letter-spacing: 10px;
+	margin-top: 10px;
+	margin-bottom: 80px;
 }
 
 .intro-left p {
@@ -211,10 +225,9 @@ body {
 }
 
 .intro-right {
-	position: relative;
+	position: absolute;
 	top: 0;
-	right: 0;
-	left: 0;
+	left: 800px;
 }
 
 .intro-right .headshot{
@@ -397,8 +410,12 @@ body {
 
 /* policy */
 .policy {
-	height: 1154px;
+	height: 1000px;
 	position: relative;
+}
+
+.policy-container {
+	position: absolute;
 	top: 150px;
 	left: 250px;
 }
@@ -428,6 +445,13 @@ body {
 	top: 200px;
 	left: 94px;
 	z-index: -1;
+}
+
+.policy-line {
+	position: absolute;
+	top: 400px;
+	left: 1370px;
+	z-index: 5;
 }
 
 .policy-content {
@@ -484,13 +508,21 @@ body {
 
 /* donation */
 .donation {
-	height: 1200px;
+	position: relative;
+	height: 1150px;
 }
 
-.donation-content{
+.donation-container {
+	position: relative;
+	top: 150px;
+}
+
+.donation-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
-	margin-bottom: 48px;
-	background: #fff;
 }
 
 .donation-content span {
@@ -537,8 +569,8 @@ body {
 }
 
 .donation-banner {
-	position: relative;
-	top: 0;
+	position: absolute;
+	top: 260px;
 	right: 0;
 	left: 0;
 }
@@ -557,6 +589,7 @@ body {
 .arrow {
 	border-radius: 50%;
 	border: none;
+	cursor: pointer;
 }
 
 .left-arrow {
@@ -663,6 +696,11 @@ body {
 	right: 0;
 	left: 0;
 	height: 1283px;
+}
+
+.feedback-container {
+	position: absolute;
+	top: 150px;
 }
 
 .feedback-info {
@@ -875,3 +913,14 @@ body {
 	font-size: 16px;
 	letter-spacing: 1px;
 }
+
+/* 向上滑功能 */
+#to-top {
+	position: fixed;
+  left: 1686px;
+  top: 50%;
+	z-index: 100;
+}
+
+/* RWD */
+
