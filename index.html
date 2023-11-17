@@ -11,16 +11,16 @@
     <nav class="navbar">
       <div class="navbar-container">
         <ul class="navbar-list-left">
-          <li><a href="#" class="list-item">About Me</a></li>
-          <li><a href="#" class="list-item">Latest Acticity</a></li>
-          <li><a href="#" class="list-item">Policy</a></li>
+          <li><a href="#about-me" class="list-item">About Me</a></li>
+          <li><a href="#latest-activity" class="list-item">Latest Acticity</a></li>
+          <li><a href="#policy" class="list-item">Policy</a></li>
         </ul>
         <div class="navbar-logo-absolute">
           <img src="./images/navbar/logo.png" alt="logo">
         </div>
         <ul class="navbar-list-right"> 
-          <li><a href="#" class="list-item">Donation</a></li>
-          <li><a href="#" class="list-item">Feedback</a></li>
+          <li><a href="#donation" class="list-item">Donation</a></li>
+          <li><a href="#feedback" class="list-item">Feedback</a></li>
         </ul>
 
         <ul class="links-images">
@@ -41,7 +41,7 @@
 
   </header> 
 
-  <div class="about-me">
+  <div class="about-me" id="about-me">
     <div class="intro-left">
       <span>About Me</span>
       <h2>立法委員 <br> 候選人主張</h2>
@@ -58,7 +58,7 @@
     </div>
   </div>
 
-  <div class="latest-activity">
+  <div class="latest-activity" id="latest-activity">
     <img src="./images/latestnews/basecolor-main.png" alt="" class="la-basecolor">
     <img src="./images/latestnews/basecolor-left.png" alt="" class="la-basecolor-left">
     <img src="./images/latestnews/basecolor-right.png" alt="" class="la-basecolor-right">
@@ -108,7 +108,7 @@
     <img src="./images/latestnews/decoration-line.jpg" class="la-decoration-line">
   </div>
 
-  <div class="policy">
+  <div class="policy" id="policy">
     <span>Policy</span>
     <h2>政策議題</h2>
 
@@ -136,7 +136,7 @@
     <img src="./images/policy/policy-fishes.png" class="policy-fishes">
   </div>
 
-  <div class="donation">
+  <div class="donation" id="donation">
     <div class="donation-content">
       <span>Donation</span>
       <h2>捐款方案</h2>
@@ -162,13 +162,13 @@
             <div class="amount">NT$ 600</div>
           </div>
           <div class="donor-number">已有 9,957 人贊助</div>
-          <button>前往捐款</button>
+          <input type="submit" value="前往捐款">
         </div>
       </div>
     </div>         
   </div>
 
-  <div class="feedback">
+  <div class="feedback" id="feedback">
     <div class="feedback-info">
       <span>Feedback</span>
       <h2>民眾服務信箱</h2>
@@ -196,8 +196,67 @@
       <img src="./images/feedback/feedback-fishes.png" alt="fish icon">
     </div>
   </div>
-  <div class="footer">
 
+  <div class="footer">
+    <div class="footer-container">
+      <div class="information">
+        <h4>Information</h4> 
+        <div>
+          <img src="./images/footer/home-icon.png" alt="">
+          <p>喵星區，毛茸茸大道88號，喵喵大樓3樓</p>
+        </div>
+        <div>
+          <img src="./images/footer/phone-icon.png" alt="">
+          <p>(02) 888-5678</p>
+        </div>
+        <div>
+          <img src="./images/footer/mail-icon.png" alt="">
+          <p>meowoffice@linmeow.tw</p>
+        </div>
+      </div>
+
+      <div class="links">
+        <h4>Links</h4>
+        <div class="links-content">
+          <ul class="links-content-left">
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Last activity</a></li>
+            <li><a href="#">Policy</a></li>
+            <li><a href="#">Donation</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="follow">
+        <h4>Follow us</h4>
+
+        <ul class="follow-icons">
+
+          <li class="circle">
+            <a href=""></a><img src="./images/footer/fb-icon.png" alt="facebook icon"></a>
+          </li>
+
+          <li class="circle">
+            <a href=""></a><img src="./images/footer/ig-icon.png" alt="instagram icon"></a>
+          </li>
+
+          <li class="circle">
+            <a href=""></a><img src="./images/footer/youtube-icon.png" alt="youtube icon"></a>
+          </li>
+
+          <li class="circle">
+            <a href=""><img src="./images/footer/line-icon.png" alt="line icon"></a>
+          </li>
+
+        </ul>
+
+        <div class="copyright">版權聲明：© 2023喵立翰 版權所有</div>
+
+      </div>
+    </div>
   </div>
 </body>
 </html>
