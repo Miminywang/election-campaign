@@ -54,21 +54,20 @@ html {
 }
 
 body {
-	width: 1920px;
+	width: 100%;
 	height: auto;
-	border: 0.5px solid	#EA7F1B;
-
 }
 
 .relative {
 	position: relative;
 	height: 778px;
+	width: 100%;
 }
 
 /* navbar */
 .navbar {
 	height: 127px;
-	width: 1920px;
+	width: 100%;
 	position: absolute;
 	z-index: 100;
 	background: #fff;
@@ -110,14 +109,15 @@ body {
 .navbar-list-left a,
 .navbar-list-right a {
 	text-decoration: none;
-	color: black;
-	font-weight: 700;
-	font-size: 18px;
-	letter-spacing: 1px;
 }
 
 .list-item {
 	cursor: pointer;
+	font-weight: 700;
+	font-size: 18px;
+	color: black;
+	letter-spacing: 1px;
+	font-family: 'Jost';
 }
 
 .navbar-logo-absolute {
@@ -137,7 +137,7 @@ body {
 }
 
 .banner-img{
-	max-width: 100%;
+	width: 100%;
 	z-index: 2;
 	position: absolute;
 }
@@ -150,7 +150,7 @@ body {
 	z-index: 1;
 }
 
-.label {
+.banner-absolute label {
 	font-size: 100px;
 	font-weight: 800;
 	color: #45280D;
@@ -161,6 +161,7 @@ body {
 	height: 300px;
 	width: 755px;
 	margin: 139px 915px 258px 250px;
+	font-family: 'Noto Sans'
 }
 
 .banner-absolute .fish-decoration {
@@ -173,7 +174,6 @@ body {
 
 /* about me */
 .about-me {
-	/* margin-left: 250px; */
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 10px;
@@ -200,6 +200,7 @@ body {
 	font-size: 30px;
 	font-weight: 400;
 	letter-spacing: 1px;
+	font-family: 'Jost';
 }
 
 .intro-left h2 {
@@ -212,6 +213,7 @@ body {
 	letter-spacing: 10px;
 	margin-top: 10px;
 	margin-bottom: 80px;
+	font-family: 'Noto Sans';
 }
 
 .intro-left p {
@@ -222,6 +224,7 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: 3px;
+	font-family: 'Noto Sans';
 }
 
 .intro-right {
@@ -265,6 +268,7 @@ body {
 	z-index: 20;
 	top: 425px;
 	left: 345px;
+	font-family: 'Noto Sans';
 }
 
 .intro-right .label-e-name {
@@ -279,6 +283,7 @@ body {
 	z-index: 20;
 	top: 534px;
 	left: 328px;
+	font-family: 'Jost';
 }
 
 /* latest activity */
@@ -290,6 +295,7 @@ body {
 .la-basecolor {
 	position: absolute;
 	z-index: -1;
+	width: 100%;
 }
 
 .la-basecolor-left {
@@ -303,8 +309,8 @@ body {
 .la-basecolor-right {
 	position: absolute;
 	z-index: 1;
-	top: 1064px;
-	left: 1650px;
+	top: 1200px;
+	left: 1850px;
 }
 
 .latest-activity span {
@@ -319,6 +325,7 @@ body {
 	z-index: 10;
 	top: 150px;
 	left: 250px;
+	font-family: 'Jost';
 }
 
 .latest-activity h2 {
@@ -333,6 +340,7 @@ body {
 	z-index: 10;
 	top: 210px;
 	left: 250px;
+	font-family: 'Noto Sans';
 }
 
 .la-container {
@@ -349,7 +357,8 @@ body {
 
 .la-yymmdd {
 	display: flex;
-	margin: 38px 0 46px 0
+	margin: 38px 0 46px 0;
+	font-family: 'Jost';
 }
 
 .la-year{
@@ -388,6 +397,7 @@ body {
 	height: 100px;
 	color: #505050;
 	margin-bottom: 16px;
+	font-family: 'Noto Sans';
 }
 
 .la-item p {
@@ -396,6 +406,7 @@ body {
 	line-height: 30px;
 	letter-spacing: 1px;
 	color: #505050;
+	font-family: 'Noto Sans';
 }
 
 .la-item3 {
@@ -428,6 +439,7 @@ body {
 	font-size: 30px;
 	font-weight: 400;
 	letter-spacing: 1px;
+	font-family: 'Jost';
 }
 
 .policy h2 {
@@ -438,6 +450,7 @@ body {
 	font-size: 80px;
 	font-weight: 800;
 	letter-spacing: 2px;
+	font-family: 'Noto Sans';
 }
 
 .policy-basecolor {
@@ -482,6 +495,7 @@ body {
 	line-height: 50px;
 	letter-spacing: 2px;
 	color: #505050;
+	font-family: 'Noto Sans';
 }
 
 .text-container {
@@ -531,6 +545,7 @@ body {
 	font-weight: 400px;
 	font-size: 30px;
 	color: #EA7F1B;
+	font-family: 'Jost';
 }
 
 .donation-content h2 {
@@ -542,6 +557,7 @@ body {
 	letter-spacing: 2px;
 	color: #45280D;
 	margin: 10px auto 28px auto;
+	font-family: 'Noto Sans';
 }
 
 .donation-content .donor{
@@ -558,6 +574,7 @@ body {
 	line-height: 50px;
 	color: #858585;
 	margin-right: 5px;
+	font-family: 'Noto Sans';
 }
 
 .donor .total-number {
@@ -566,6 +583,7 @@ body {
 	line-height: 60px;
 	letter-spacing: 2px;
 	color: #EA7F1B;
+	font-family: 'Jost';
 }
 
 .donation-banner {
@@ -576,7 +594,7 @@ body {
 }
 
 .donation-background {
-	width: 1920px;
+	width: 100%;
 	height: 734px;
 	background: linear-gradient(
 		to right, 
@@ -584,6 +602,9 @@ body {
 		rgba(255, 255, 255, 0),
 		rgba(255, 255, 255, 0.4)), 
 		url(images/donation/cat-banner.png);	
+		object-fit: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 }
 
 .arrow {
@@ -625,6 +646,7 @@ body {
 	top: 30px;
 	left: 75px;
 	right: 75px;
+	font-family: 'Noto Sans';
 }
 
 .donation-info .detail {
@@ -645,6 +667,7 @@ body {
 	letter-spacing: 2px;
 	color: #050505;
 	margin-right: 10px;
+	font-family: 'Noto Sans';
 }
 
 .detail .amount {
@@ -655,6 +678,7 @@ body {
 	line-height: 50px;
 	letter-spacing: 2px;
 	color: #EA7F1B;
+	font-family: 'Jost';
 }
 
 .donor-number {
@@ -668,6 +692,7 @@ body {
 	position: absolute;
 	top: 156px;
 	left: 50px;
+	font-family: 'Jost';
 }
 
 .donation-info input {
@@ -718,6 +743,7 @@ body {
 	line-height: 50px;
 	color: #EA7F1B;
 	letter-spacing: 1px;
+	font-family: 'Jost';
 }
 
 .feedback-info h2 {
@@ -729,6 +755,7 @@ body {
 	color: #45280D;
 	letter-spacing: 2px;
 	margin: 10px 0 60px 0;
+	font-family: 'Noto Sans';
 }
 
 .feedback-info h3 {
@@ -740,6 +767,7 @@ body {
 	color: #505050;
 	letter-spacing: 2px;
 	margin-bottom: 18px;
+	font-family: 'Noto Sans';
 }
 
 .feedback-info p {
@@ -750,6 +778,7 @@ body {
 	line-height: 30px;
 	color: #505050;
 	letter-spacing: 2px;
+	font-family: 'Noto Sans';
 }
 
 .feedback-form {
@@ -775,6 +804,7 @@ body {
 	letter-spacing: 2px;
 	margin-bottom: 4px;
 	color: #858585;
+	font-family: 'Noto Sans';
 }
 
 .feedback-form input, textarea {
@@ -784,7 +814,8 @@ body {
   border-radius: 8px;
   box-sizing: border-box;
 	padding: 20px 20px;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
+	font-family: 'Noto Sans';
 }
 
 .feedback-form input {
@@ -843,6 +874,7 @@ body {
 	letter-spacing: 1px;
 	margin-bottom: 39px;
 	color: #45280D;
+	font-family: 'Jost';
 }
 
 .information {
@@ -861,6 +893,7 @@ body {
 	font-size: 16px;
 	letter-spacing: 2px;
 	color: #505050;
+	font-family: 'Noto Sans';
 }
 
 .links-content {
@@ -882,6 +915,7 @@ body {
 	letter-spacing: 2px;
 	text-decoration: none;
 	color: #EA7F1B;
+	font-family: 'Jost';
 }
 
 .follow {
@@ -912,12 +946,13 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	letter-spacing: 1px;
+	font-family: 'Jost';
 }
 
 /* 向上滑功能 */
 #to-top {
 	position: fixed;
-  left: 1686px;
+  right: 5%;
   top: 50%;
 	z-index: 100;
 }
