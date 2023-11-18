@@ -12,17 +12,26 @@
   .hamburger {
     display: block;
     position: absolute;
+    top: 50px;
   }
 
-  /* New styles for dropdown */
+  .hamburger a, ul {
+    text-decoration: none;
+    color: black;
+    font-size: 800;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  /* dropdown */
   .dropdown {
-    display: none; /* Initially hidden */
+    display: none; /*一開始沒有*/
     position: absolute;
-    left: 0;
+    left: 0px;
     top: 100%;
-    width: 100%;
+    width: 300px;
     z-index: 120;
-    background: #AA0601; /* Same as navbar */
+    background: #D3D3D3;
   }
 
   .dropdown.active {
@@ -31,13 +40,16 @@
 
   .dropdown li a {
     display: block;
-    color: #FFFFFF;
+    color: black;
     border-top: 1px solid #FFFFFF;
     padding: 16px 0;
     text-decoration: none;
   }
 
   .dropdown li a:hover {
-    background: #8f0400;
+    background: #FFFACD;
   }
+
+  /* logo */
+  
 }
