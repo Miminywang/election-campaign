@@ -4,43 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost|Noto Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="rwd.css">
   <title>Election Compaign</title>
 </head>
 <body>
-    <header class="relative">
-      <nav class="navbar" id="navbar">
-        <div class="navbar-container">
-          <ul class="navbar-list-left">
-            <li><a href="#about-me" class="list-item">About Me</a></li>
-            <li><a href="#latest-activity" class="list-item">Latest Acticity</a></li>
-            <li><a href="#policy" class="list-item">Policy</a></li>
-          </ul>
-          <div class="navbar-logo-absolute">
-            <img src="./images/navbar/logo.png" alt="logo">
-          </div>
-          <ul class="navbar-list-right"> 
-            <li><a href="#donation" class="list-item">Donation</a></li>
-            <li><a href="#feedback" class="list-item">Feedback</a></li>
-          </ul>
+  <header class="relative">
+    <nav class="navbar" id="navbar">
+      <!-- hamburger -->
+      <div class="hamburger">
+        <a href="#" class="ham-icon">
+          <div>三</div>
+        </a> 
+        
+        <ul class="dropdown">
+          <li><a href="#about-me" class="ham-list-item">About Me</a></li>
+          <li><a href="#latest-activity" class="ham-list-item">Latest Acticity</a></li>
+          <li><a href="#policy" class="ham-list-item">Policy</a></li> 
+          <li><a href="#donation" class="ham-list-item">Donation</a></li>
+          <li><a href="#feedback" class="ham-list-item">Feedback</a></li>
+        </ul>
 
-          <ul class="links-images">
-            <li><a href="#"><img src="./images/navbar/facebook.png" alt="facebook link"></a></li>
-            <li><a href="#"><img src="./images/navbar/instagram.png" alt="instagram link"></a></li>
-            <li><a href="#"><img src="./images/navbar/youtube.png" alt="youtube link"></a></li>
-            <li><a href="#"><img src="./images/navbar/linechat.png" alt="line link"></a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="banner-absolute">
-        <img class="banner-img" src="./images/banner/banner.png" alt="banner featuring a cat">
-        <img src="./images/banner/banner_basecolor.png" alt="base color" class="base-color">
-        <img src="./images/banner/fishes.png" alt="fish images" class="fish-decoration">
-        <label>台灣的明天，喵先鋪路</label>
       </div>
 
-    </header> 
+
+      <!-- navbar -->
+      <div class="navbar-container">
+        <ul class="navbar-list-left">
+          <li><a href="#about-me" class="list-item">About Me</a></li>
+          <li><a href="#latest-activity" class="list-item">Latest Acticity</a></li>
+          <li><a href="#policy" class="list-item">Policy</a></li>
+        </ul>
+        <div class="navbar-logo-absolute">
+          <img src="./images/navbar/logo.png" alt="logo">
+        </div>
+        <ul class="navbar-list-right"> 
+          <li><a href="#donation" class="list-item">Donation</a></li>
+          <li><a href="#feedback" class="list-item">Feedback</a></li>
+        </ul>
+
+        <ul class="links-images">
+          <li><a href="#"><img src="./images/navbar/facebook.png" alt="facebook link"></a></li>
+          <li><a href="#"><img src="./images/navbar/instagram.png" alt="instagram link"></a></li>
+          <li><a href="#"><img src="./images/navbar/youtube.png" alt="youtube link"></a></li>
+          <li><a href="#"><img src="./images/navbar/linechat.png" alt="line link"></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="banner-absolute">
+      <img class="banner-img" src="./images/banner/banner.png" alt="banner featuring a cat">
+      <img src="./images/banner/banner_basecolor.png" alt="base color" class="base-color">
+      <img src="./images/banner/fishes.png" alt="fish images" class="fish-decoration">
+      <label>台灣的明天，喵先鋪路</label>
+    </div>
+
+  </header> 
 
     <div class="about-me" id="about-me">
       <div class="about-me-container">
@@ -275,5 +295,7 @@
         <img src="./images/fish-icon.png" alt="click here to go back to the top">
       </a>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

@@ -54,7 +54,7 @@ html {
 }
 
 body {
-	width: 100%;
+	width: 1920px;
 	height: auto;
 }
 
@@ -63,6 +63,7 @@ body {
 	height: 778px;
 	width: 100%;
 }
+
 
 /* navbar */
 .navbar {
@@ -126,6 +127,7 @@ body {
 	right: 877px;
 	left: 877px;
 }
+
 
 /* banner */
 .banner-absolute {
@@ -952,10 +954,8 @@ body {
 /* 向上滑功能 */
 #to-top {
 	position: fixed;
-  right: 5%;
+  left: 1700px;
   top: 50%;
 	z-index: 100;
 }
-
-/* RWD */
 
