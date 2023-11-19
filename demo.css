@@ -1,0 +1,116 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* start */
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.new-navbar-container {
+    height: 127px;
+    display: flex;
+    position: relative;
+    padding: 0 150px;
+    border-bottom: 3px solid #ea7f1e;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+
+.new-navbar-list {
+    height: 100%;
+    margin: 0 -32px;
+    /* padding-left: 200px; */
+    /* background-color:cadetblue; */
+}
+
+.new-navbar-list li {
+    /* background-color:blueviolet; */
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 32px;
+}
+
+.new-navbar-list li a {
+    text-decoration: none;
+    padding: 30px 20px;
+    color: #45280d;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+}
+
+.new-navbar-logo-absolute {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.new-navbar-list-wrap {
+    display: flex;
+}
+
+.new-links-images {
+    height: 100%;
+    margin: 0 -8px;
+    padding-left: 80px;
+}
+
+.new-links-images li{
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+}
