@@ -1,0 +1,362 @@
+/* 長寬數值無法完全參照figma */
+/* figma照片占的長寬非實際大小，無法與其他部分有正確的距離。只能目視大概距離 */
+/* figma提供的logo邊框沒有切好，難以讓navbar對稱。
+是否有更好的寫法? */
+/* font-weight和字型好像沒有吃到? */
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ea7f1b;
+  height: 127px;
+  position: relative;
+}
+
+nav .logo {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 100;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list li {
+  display: inline-flex;
+}
+
+.nav-left li,
+.nav-right li {
+  margin: 25px 32px;
+}
+
+.nav-left ul,
+.nav-right ul {
+  padding: 0;
+}
+
+.nav-left li a,
+.nav-right li a {
+  text-decoration: none;
+  padding: 30px 30px;
+  color: #45280d;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  height: 100%;
+  width: 100%;
+  font-family: Jost;
+}
+
+.nav-left ul {
+  margin-left: 150px;
+}
+
+nav .links ul {
+  margin-right: 250px;
+  padding:0;
+}
+
+nav .links li a {
+  padding: 11px;
+  cursor: pointer;
+}
+
+/* banner */
+.banner {
+  position: relative;
+}
+
+.banner .basecolor {
+  position: absolute;
+  z-index: -1;
+  top: 80px;
+  left: 0;
+}
+
+.banner h1 {
+  position: absolute;
+  top: 80px;
+  left: 250px;
+
+  width: 755px;
+  height: 300px;
+  color: #45280d;
+  font-family: Noto Sans;
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 150px;
+  letter-spacing: 20px;
+}
+
+.banner .fishes {
+  position: absolute;
+  top: 546px;
+  left: 186px;
+}
+
+/* 如何讓to-top的鈕定位? */
+/* scroll fixed */
+.to-top {
+  position: fixed;
+  top: 476px;
+  right: 1200px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* about me */
+.about-me {
+  height: 996px;
+}
+
+.about-me-container {
+  padding-top: 209px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-section {
+  margin-left: 250px;
+}
+
+.content-section h4 {
+  font-family: Jost;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  color: #ea7f1b;
+  margin: 0 0 9px;
+  padding: 0;
+}
+
+.about-me-title {
+  width: 572px;
+  height: 220px;
+}
+
+.about-me-title h2 {
+  font-family: Noto Sans;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 100px;
+  letter-spacing: 22.4px;
+  color: #45280d;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me-p {
+  width: 698px;
+  height: 186px;
+}
+
+.content-section p {
+  color: #505050;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 3.84px;
+  text-align: justify;
+}
+
+.photo-section {
+  position: relative;
+  left: 100px;
+  width: 1008px;
+  height: 671px;
+}
+
+.photo-section .headshot {
+  border-radius: 50%;
+  position: absolute;
+  left: 100px;
+  z-index: 1;
+}
+
+.photo-section .basecolor {
+  position: absolute;
+  top: 208px;
+  left: 150px;
+  z-index: -1;
+}
+
+.photo-section .fishes {
+  position: absolute;
+  top: 653px;
+  left: 450px;
+  z-index: 10;
+}
+
+.photo-section h2 {
+  color: #45280d;
+  font-family: Noto Sans;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 15px;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  z-index: 30;
+  top: 350px;
+  left: 450px;
+}
+
+.photo-section h3 {
+  color: #45280d;
+  font-family: Noto Sans;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  position: absolute;
+  z-index: 30;
+  top: 459px;
+  left: 450px;
+}
+
+/* latest-news */
+.latest-activity {
+  height: 1294px;
+
+  background-image: 
+    url(./images/latestnews/basecolor-left.png),
+    url(./images/latestnews/basecolor-right.png),
+    url(./images/latestnews/basecolor-main.png);
+  
+  background-repeat: no-repeat, no-repeat, no-repeat;
+
+  background-position: 
+    top left,
+    bottom right,
+    center;
+}
+
+.latest-activity h4 {
+  font-family: Jost;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  color: #ea7f1b;
+  margin: 0 0 9px;
+  padding: 0;
+}
+
+.latest-activity-title h2 {
+  font-family: Noto Sans;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 100px;
+  letter-spacing: 22.4px;
+  color: #45280d;
+  margin: 0;
+  padding: 0;
+}
+
+.latest-activity-container {
+  padding: 150px 0 0 250px;
+}
+
+/* 如何設定讓滑鼠可以滑動滾條 */
+.latest-activity-swipe {
+  margin-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+
+  /* 左右滑動 */
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+/* 自訂滾條 */
+.latest-activity-swipe {
+  list-style: none;
+  &::-webkit-scrollbar{
+    height: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #9c9c9c;
+    border-radius: 10px;
+    margin: 500px 750px;
+  }
+  &::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #EA7F1B;
+  }
+}
+
+.activity1, .activity2, .activity3 {
+  width: 578px;
+  margin-right: 20px;
+}
+
+.activity1-content {
+  width: 578px;
+}
+
+.period-container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.period-box {
+  display: flex;
+  align-items: center;
+}
+
+.year {
+  color: #EA7F1B;
+  font-family: Jost;
+  font-size: 50px;    
+  font-weight: 500;
+  letter-spacing: 4px;
+  /* margin-right: 16px; */
+}
+
+.date {
+  color: #EA7F1B;
+  font-family: Jost;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  margin: 0 16px;
+}
+
+.line {
+  height: 1px;
+  width: 325px;
+  background: #9c9c9c;
+}
+
+.activity-info h3 {
+  height: 100px;
+  color: #505050;
+  font-family: Noto Sans;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 7.2px;
+}
+
+.activity-info p {
+  color: #505050;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; 
+  letter-spacing: 3.84px;
+}
+
